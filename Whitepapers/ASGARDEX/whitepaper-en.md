@@ -432,7 +432,7 @@ R0 = Rune Depth
 T0 = Token Depth
 ```
 
-Thus we can process market orders by simply trading across the CLP. Arbitragers will immediately correct any outstanding limit orders.
+Thus we can process market orders by simply trading across the CLP. Arbitragers will immediately correct any outstanding limit orders. In the future we will use both limit orders and the CLP trades described above to fill market orders in ASGARDEX in cases where filling an order is not possible at the current market price due to substantial slippage. This avoids the situation where a market order is further from the current market price than outstanding limit orders on the orderbook, due to predicted slippage. 
 
 *For this version we omit the Liquidity Fee for simplicity.* 
 
